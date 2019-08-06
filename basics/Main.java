@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.Random;
 
 public class Main {
@@ -14,6 +15,9 @@ public class Main {
 
     // Feature Flipping Coins
     flipNHeads(2);
+
+    // Feature Command Line Clock
+    clock();
   }
 
   // Feature Pluralize
@@ -51,5 +55,25 @@ public class Main {
   }
 
   // Feature Command Line Clock
+  public static void clock() {
+
+    LocalDateTime now = LocalDateTime.now();
+    int hour = now.getHour();
+    int minute = now.getMinute();
+    int initialSecond = now.getSecond();
+
+    while (true) {
+
+      LocalDateTime time = LocalDateTime.now();
+      int hours = time.getHour();
+      int minutes = time.getMinute();
+      int seconds = time.getSecond();
+
+      if (initialSecond < seconds) {
+        initialSecond = seconds;
+        System.out.println("time: " + hours + ":" + minutes + ":" + seconds);
+      }
+    }
+  }
 
 }
