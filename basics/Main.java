@@ -56,14 +56,10 @@ public class Main {
 
   // Feature Command Line Clock
   public static void clock() {
-
     LocalDateTime now = LocalDateTime.now();
-    int hour = now.getHour();
-    int minute = now.getMinute();
     int initialSecond = now.getSecond();
 
     while (true) {
-
       LocalDateTime time = LocalDateTime.now();
       int hours = time.getHour();
       int minutes = time.getMinute();
