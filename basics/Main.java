@@ -50,6 +50,7 @@ public class Main {
         System.out.println("heads");
       }
     }
+
     System.out.println("It took " + totalFlips + " flips to flip " + headsCounter + " head in a row.");
   }
 
@@ -64,9 +65,12 @@ public class Main {
       int minutes = time.getMinute();
       int seconds = time.getSecond();
 
-      if (initialSecond < seconds) {
+      String mins = String.format("%02d", minutes);
+      String secs = String.format("%02d", seconds);
+
+      if (initialSecond != seconds) {
         initialSecond = seconds;
-        System.out.println("time: " + hours + ":" + minutes + ":" + seconds);
+        System.out.println("time: " + hours + ":" + mins + ":" + secs);
       }
     }
   }
