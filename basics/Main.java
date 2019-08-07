@@ -22,9 +22,9 @@ public class Main {
 
   // Feature Pluralize
   public static String pluralize(String word, int count) {
-    String plural = "" + 's';
+    String plural = "s";
 
-    if (count >= 0) {
+    if (count == 0 || count > 1) {
       word += plural;
     }
     return word;
@@ -39,18 +39,18 @@ public class Main {
     while (headsCounter < n) {
       Random randomNum = new Random();
       double flip = randomNum.nextDouble();
+      totalFlips++;
 
       if (flip < constraint) {
-        totalFlips++;
+        headsCounter = 0;
         System.out.println("tails");
 
-      } else if (flip > constraint) {
-        totalFlips++;
+      } else {
         headsCounter++;
         System.out.println("heads");
       }
-
     }
+
     System.out.println("It took " + totalFlips + " flips to flip " + headsCounter + " head in a row.");
   }
 
@@ -65,9 +65,12 @@ public class Main {
       int minutes = time.getMinute();
       int seconds = time.getSecond();
 
-      if (initialSecond < seconds) {
+      String mins = String.format("%02d", minutes);
+      String secs = String.format("%02d", seconds);
+
+      if (initialSecond != seconds) {
         initialSecond = seconds;
-        System.out.println("time: " + hours + ":" + minutes + ":" + seconds);
+        System.out.println("time: " + hours + ":" + mins + ":" + secs);
       }
     }
   }
