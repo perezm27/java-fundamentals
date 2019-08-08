@@ -16,3 +16,20 @@ A method that given an array of arrays calculate the average value for each arra
 ## Collaborative Efforts 
 Matt Stuhring  
 Travix Cox
+
+## Lab 3
+Maps, File I/O, and Testing
+
+## Feature 1 : Maps
+A method that iterates from the min temp to the max temp and create a String containing any temperature not seen during the month. Returns that String.
+
+## Feature 2 : Tallying Election
+A method called tally that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+## Feature 3 : JavaScript Linter
+A method that reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
+
+
+## Collaborative Efforts 
+Matt Stuhring    
+Jack Kinne  
