@@ -4,7 +4,8 @@ This repo holds the first 10 Java labs.
 
 ## Labs
 [Lab 1](./basics)  
-[Lab 2](./basiclibrary)
+[Lab 2](./basiclibrary/src/main/java/basiclibrary/Library.java)  
+[Lab 3](./basiclibrary/src/main/java/basiclibrary/Lab3Examples.java)
 
 
 ## Documentation
