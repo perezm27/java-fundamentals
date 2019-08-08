@@ -40,8 +40,9 @@ public class LibraryTest {
                 {65, 56, 55, 52, 55, 62, 57}
         };
 
-       int average = 60;
+        int[] expectedOutput = weeklyMonthTemperatures[2];
 
-        assertEquals(average, Library.arrayOfArrays(weeklyMonthTemperatures));
+
+        assertEquals(expectedOutput, Library.arrayOfArrays(weeklyMonthTemperatures));
     }
 }

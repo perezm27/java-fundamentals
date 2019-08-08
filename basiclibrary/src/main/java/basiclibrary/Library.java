@@ -48,17 +48,18 @@ public class Library {
         return averages / arrOfAvg.length;
     }
 
-    public static int arrayOfArrays (int[][] arr){
-        int sum = 0;
-        int average = 0;
+    public static int[] arrayOfArrays (int[][] arr){
+        int lowestIndx = 0;
+        int lowestAverage = calculateAvgs(arr[0]);
 
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                sum = sum + arr[i][j];
-                average++;
+            if(calculateAvgs(arr[i]) < lowestAverage){
+                lowestAverage = calculateAvgs(arr[i]);
+                lowestIndx = i;
             }
+
         }
-        return sum / average;
+        return arr[lowestIndx];
     }
 
 }
