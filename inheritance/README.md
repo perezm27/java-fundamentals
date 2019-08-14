@@ -16,6 +16,10 @@ Add an instance method addReview to your Restaurant class. This method should ta
 ## Feature 5 : Update Restaurant Review rating
 Ensure that your addReview method updates the Restaurant star rating appropriately, and add tests. 
  
+## Sources
+[ArrayList](https://www.callicoder.com/java-arraylist/)
+[Rating Example](https://stackoverflow.com/questions/28822556/simple-rating-system-in-java)
+
 ## Collaborative Efforts 
 Matt Stuhring  
 Nick Paro  
