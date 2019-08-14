@@ -28,7 +28,6 @@ public class RestaurantTest {
 
         testRestaurant.addReview(testReview2);
 
-        System.out.println(testRestaurant.starRating);
         assertEquals(2,testRestaurant.starRating);
     }
 

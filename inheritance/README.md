@@ -24,3 +24,26 @@ Ensure that your addReview method updates the Restaurant star rating appropriate
 Matt Stuhring  
 Nick Paro  
 Jack Kinne  
+
+
+## Lab 07: Inheritance, day 2
+
+# Feature 1 : Shop class
+The users want shops! Create a Shop class; a Shop should have a name, description, and number of dollar signs.
+
+# Feature 2 : Review Shops
+The users also want to review shops!
+
+# Feature 3 : Theater Class 
+* The users want theaters! Create a Theater class; a Theater should have a name and all of the movies currently showing there. 
+* Write addMovie and removeMovie instance methods that allow the theater to update which movies are being shown.
+
+# Feature 4 : Test Reviews
+Ensure that your Theater is just as reviewable as your Restaurant and your Shop.
+
+# Feature 5 : Specify Movie seen in reviews
+When a user is reviewing a Theater, they also want to specify which movie they saw.
+
+## Collaborative Efforts 
+Matt Stuhring  
+Nick Paro  
