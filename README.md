@@ -12,4 +12,4 @@ This repo holds the first 10 Java labs.
 ## Documentation
 [Lab 1 README](./basics/README.md)  
 [Lab 2 & 3 README](./basiclibrary/README.md)  
-[Lab 6 & Lab 7 README](java-fundamentals/inheritance/README.md)
+[Lab 6 & Lab 7 README](./inheritance/README.md)
